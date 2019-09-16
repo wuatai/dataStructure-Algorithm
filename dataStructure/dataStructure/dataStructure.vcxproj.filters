@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SortingAlgorithm">
+      <UniqueIdentifier>{9aea06e0-d28c-42a2-a7a9-4fc041003ab7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SortingAlgorithm\Sort.cpp">
+      <Filter>SortingAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="MainHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SortingAlgorithm\Sort.h">
+      <Filter>SortingAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="MainHelper.h" />
+  </ItemGroup>
+</Project>
