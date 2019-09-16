@@ -1,18 +1,16 @@
-﻿生成启动时间为 2019/9/16 20:08:07。
-     1>项目“H:\project\dataStructure\dataStructure\dataStructure.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2019/9/16 21:08:41。
+     1>项目“H:\httpd-2.4.39-win64-VC15\Apache24\htdocs\dataStructure-Algorithm\dataStructure\dataStructure\dataStructure.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MainHelper.cpp SortingAlgorithm\Sort.cpp main.cpp
-         main.cpp
-         Sort.cpp
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MainHelper.cpp
          MainHelper.cpp
-         正在生成代码...
+     1>h:\httpd-2.4.39-win64-vc15\apache24\htdocs\datastructure-algorithm\datastructure\datastructure\mainhelper.cpp(31): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
        Link:
-         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\project\dataStructure\Debug\dataStructure.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\project\dataStructure\Debug\dataStructure.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\project\dataStructure\Debug\dataStructure.lib" /MACHINE:X86 Debug\main.obj
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\httpd-2.4.39-win64-VC15\Apache24\htdocs\dataStructure-Algorithm\dataStructure\Debug\dataStructure.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\httpd-2.4.39-win64-VC15\Apache24\htdocs\dataStructure-Algorithm\dataStructure\Debug\dataStructure.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\httpd-2.4.39-win64-VC15\Apache24\htdocs\dataStructure-Algorithm\dataStructure\Debug\dataStructure.lib" /MACHINE:X86 Debug\main.obj
          Debug\MainHelper.obj
          Debug\Sort.obj
-         dataStructure.vcxproj -> H:\project\dataStructure\Debug\dataStructure.exe
-     1>已完成生成项目“H:\project\dataStructure\dataStructure\dataStructure.vcxproj”(Build 个目标)的操作。
+         dataStructure.vcxproj -> H:\httpd-2.4.39-win64-VC15\Apache24\htdocs\dataStructure-Algorithm\dataStructure\Debug\dataStructure.exe
+     1>已完成生成项目“H:\httpd-2.4.39-win64-VC15\Apache24\htdocs\dataStructure-Algorithm\dataStructure\dataStructure\dataStructure.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.83
+已用时间 00:00:00.46
