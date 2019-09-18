@@ -6,6 +6,8 @@ namespace Sorting
 	{
 	public:
 		static void selectionSort(int arr[], int n);
+		static void insertionSort(int arr[], int n);
+		static void insertionSortEx(int arr[], int n);
 	};
 }
 #endif

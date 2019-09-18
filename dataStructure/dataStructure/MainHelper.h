@@ -11,9 +11,11 @@ namespace MainHelper
 		static int *genRandomArr(const int n, const int rangL, const int rangR);
 		static void testSortTime(std::string sortName, void (*sort)(int arr[], int n), int arr[], int n);
 		static bool isSorted(const int arr[], int n);
+		static int *genOrderRandomArr(const int n, const int swapTimes);
 	public:
 		static void testSelectionSort();
-		
+		static void testInsertionSort();
+		static void testInsertionSortEx();
 	};
 }
 

@@ -14,9 +14,23 @@ void MainHelper::MainHelper::printArray(const int arr[], const int n)
 
 void MainHelper::MainHelper::testSelectionSort()
 {
-	int n = 100000;
-	int *testArr = genRandomArr(n, 1, n);
+	int n = 10000;
+	int *testArr = genOrderRandomArr(n, 100);
 	testSortTime("selectionSort", Sorting::SortingAlgorithm::selectionSort, testArr, n);
+}
+
+void MainHelper::MainHelper::testInsertionSort()
+{
+	int n = 10000;
+	int *testArr = genRandomArr(n, 1, n);
+	testSortTime("insertionSort", Sorting::SortingAlgorithm::insertionSort, testArr, n);
+}
+
+void MainHelper::MainHelper::testInsertionSortEx()
+{
+	int n = 10000;
+	int *testArr = genOrderRandomArr(n, 100);
+	testSortTime("insertionSort", Sorting::SortingAlgorithm::insertionSortEx, testArr, n);
 }
 
 int* MainHelper::MainHelper::genRandomArr(const int n, const int rangL, const int rangR)
@@ -50,4 +64,21 @@ bool MainHelper::MainHelper::isSorted(const int arr[], int n)
 		}
 	}
 	return true;
+}
+
+int* MainHelper::MainHelper::genOrderRandomArr(const int n, const int swapTimes)
+{
+	int *arr = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = i;
+	}
+	srand(time(NULL));
+	for (int i = 0; i < swapTimes; i++)
+	{
+		int x = rand() % n;
+		int y = rand() % n;
+		std::swap(arr[x], arr[y]);
+	}
+	return arr;
 }

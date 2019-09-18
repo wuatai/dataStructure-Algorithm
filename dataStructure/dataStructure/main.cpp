@@ -6,6 +6,6 @@ int main()
 	MainHelper::MainHelper::testSelectionSort();
 
 	// ²åÈëÅÅĞò²âÊÔÓÃÀı
-
+	MainHelper::MainHelper::testInsertionSort();
 	system("pause");
 }
