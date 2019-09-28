@@ -16,6 +16,17 @@ namespace MainHelper
 		static void testSelectionSort();
 		static void testInsertionSort();
 		static void testInsertionSortEx();
+		static void testMergeSort();
+		static void testMergeDownToUp();
+		static void testQuickSort();
+		static void testQuickSort2();
+
+		static void testMaxHeap();
+		static void testMaxHeapSort1();
+		static void testMaxHeapSort2();
+		static void testMaxHeapSort();
+
+		static void testBinarySearch();
 	};
 }
 

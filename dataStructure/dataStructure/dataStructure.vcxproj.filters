@@ -6,16 +6,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="SortingAlgorithm\Sort.cpp">
       <Filter>SortingAlgorithm</Filter>
     </ClCompile>
     <ClCompile Include="MainHelper.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SortingAlgorithm\BinaryTree.cpp">
+      <Filter>SortingAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="SortingAlgorithm\Heap.cpp">
+      <Filter>SortingAlgorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SortingAlgorithm\Sort.h">
       <Filter>SortingAlgorithm</Filter>
     </ClInclude>
     <ClInclude Include="MainHelper.h" />
+    <ClInclude Include="SortingAlgorithm\BinaryTree.h">
+      <Filter>SortingAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithm\Heap.h">
+      <Filter>SortingAlgorithm</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

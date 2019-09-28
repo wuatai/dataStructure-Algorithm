@@ -1,8 +1,10 @@
 #include "MainHelper.h"
-#include "SortingAlgorithm/Sort.h"
 #include <iostream>
 #include <ctime>
 #include <cassert>
+#include "SortingAlgorithm/Sort.h"
+#include "SortingAlgorithm/Heap.h"
+#include "SortingAlgorithm/BinaryTree.h"
 
 void MainHelper::MainHelper::printArray(const int arr[], const int n)
 {
@@ -31,6 +33,34 @@ void MainHelper::MainHelper::testInsertionSortEx()
 	int n = 10000;
 	int *testArr = genOrderRandomArr(n, 100);
 	testSortTime("insertionSort", Sorting::SortingAlgorithm::insertionSortEx, testArr, n);
+}
+
+void MainHelper::MainHelper::testMergeDownToUp()
+{
+	int n = 100000;
+	int *testArr = genRandomArr(n, 1, n);
+	testSortTime("testMergeDownToUp", Sorting::SortingAlgorithm::mergeSortDownToUp, testArr, n);
+}
+
+void MainHelper::MainHelper::testQuickSort()
+{
+	int n = 100000;
+	int *testArr = genRandomArr(n, 1, 100);
+	testSortTime("testQuickSort", Sorting::SortingAlgorithm::quickSort, testArr, n);
+}
+
+void MainHelper::MainHelper::testQuickSort2()
+{
+	int n = 100000;
+	int *testArr = genRandomArr(n, 1, 100);
+	testSortTime("testQuickSort2", Sorting::SortingAlgorithm::quickSort2, testArr, n);
+}
+
+void MainHelper::MainHelper::testMergeSort()
+{
+	int n = 10000;
+	int *testArr = genRandomArr(n, 1, n);
+	testSortTime("testMergeSort", Sorting::SortingAlgorithm::mergeSort, testArr, n);
 }
 
 int* MainHelper::MainHelper::genRandomArr(const int n, const int rangL, const int rangR)
@@ -81,4 +111,72 @@ int* MainHelper::MainHelper::genOrderRandomArr(const int n, const int swapTimes)
 		std::swap(arr[x], arr[y]);
 	}
 	return arr;
+}
+
+void MainHelper::MainHelper::testMaxHeap()
+{
+	Heap::MaxHeap maxHeap = Heap::MaxHeap(100);
+	//std::cout << maxHeap.size() << std::endl;
+	srand(time(NULL));
+	for (int i = 0; i < 31; i++)
+	{
+		maxHeap.insert(rand() % 100);
+	}
+
+	maxHeap.testPrint();
+
+	while (!maxHeap.isEmpty())
+	{
+		std::cout << maxHeap.extractMax() << " ";
+	}
+}
+
+void MainHelper::MainHelper::testMaxHeapSort1()
+{
+	int n = 100000;
+	int *testArr = genRandomArr(n, 1, 100);
+	testSortTime("testMaxHeapSort1", Sorting::SortingAlgorithm::heapSort1, testArr, n);
+}
+
+void MainHelper::MainHelper::testMaxHeapSort2()
+{
+	int n = 100000;
+	int *testArr = genRandomArr(n, 1, 100);
+	testSortTime("testMaxHeapSort2", Sorting::SortingAlgorithm::heapSort2, testArr, n);
+}
+
+void MainHelper::MainHelper::testMaxHeapSort()
+{
+	int n = 100000;
+	int *testArr = genRandomArr(n, 1, 100);
+	testSortTime("testMaxHeapSort", Sorting::SortingAlgorithm::heapSort, testArr, n);
+}
+
+void MainHelper::MainHelper::testBinarySearch()
+{
+	BinaryTree::BinarySearchTree<std::string, int> tree;
+	tree.insert("China", 2);
+	tree.insert("Japan", 3);
+	tree.insert("DiDi", 3);
+	tree.insert("USA", 4);
+	tree.insert("Korea", 5);
+	tree.remove("Japan");
+	int *result = tree.search("China");
+	std::cout << "Search Result:" << *result << std::endl;
+
+	std::cout << "preOrder:";
+	tree.preOrder();
+	std::cout << std::endl;
+
+	std::cout << "inOrder:";
+	tree.inOrder();
+	std::cout << std::endl;
+
+	std::cout << "postOrder:";
+	tree.postOrder();
+	std::cout << std::endl;
+
+	std::cout << "levelOrder:";
+	tree.levelOrder();
+	std::cout << std::endl;
 }
