@@ -24,6 +24,22 @@ int main()
 	//MainHelper::MainHelper::testMaxHeapSort();
 
 	// 二叉搜索树
-	MainHelper::MainHelper::testBinarySearch();
+	//MainHelper::MainHelper::testBinarySearch();
+
+	// 并查集
+	//MainHelper::MainHelper::testUnionFind();
+
+	// 快速并查集
+	//MainHelper::MainHelper::testQuickUnion();
+
+	// 基于sz优化的快速并查集
+	MainHelper::MainHelper::testQuickUnionSz();
+
+	// 基于rank优化的快速并查集
+	MainHelper::MainHelper::testQuickUnionRank();
+
+	// 基于路径压缩优化的快速并查集
+	MainHelper::MainHelper::testQuickUnionCompress();
+
 	system("pause");
 }

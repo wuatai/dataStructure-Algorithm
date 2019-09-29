@@ -69,12 +69,14 @@
     <ClCompile Include="SortingAlgorithm\BinaryTree.cpp" />
     <ClCompile Include="SortingAlgorithm\Heap.cpp" />
     <ClCompile Include="SortingAlgorithm\Sort.cpp" />
+    <ClCompile Include="SortingAlgorithm\Union.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainHelper.h" />
     <ClInclude Include="SortingAlgorithm\BinaryTree.h" />
     <ClInclude Include="SortingAlgorithm\Heap.h" />
     <ClInclude Include="SortingAlgorithm\Sort.h" />
+    <ClInclude Include="SortingAlgorithm\Union.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

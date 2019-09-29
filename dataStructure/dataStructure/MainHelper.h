@@ -27,6 +27,11 @@ namespace MainHelper
 		static void testMaxHeapSort();
 
 		static void testBinarySearch();
+		static void testUnionFind();
+		static void testQuickUnion();
+		static void testQuickUnionSz();
+		static void testQuickUnionRank();
+		static void testQuickUnionCompress();
 	};
 }
 

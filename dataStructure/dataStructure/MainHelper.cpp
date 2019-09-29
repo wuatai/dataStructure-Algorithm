@@ -5,6 +5,7 @@
 #include "SortingAlgorithm/Sort.h"
 #include "SortingAlgorithm/Heap.h"
 #include "SortingAlgorithm/BinaryTree.h"
+#include "SortingAlgorithm/Union.h"
 
 void MainHelper::MainHelper::printArray(const int arr[], const int n)
 {
@@ -179,4 +180,114 @@ void MainHelper::MainHelper::testBinarySearch()
 	std::cout << "levelOrder:";
 	tree.levelOrder();
 	std::cout << std::endl;
+}
+
+void MainHelper::MainHelper::testUnionFind()
+{
+	int n = 100000;
+	srand(time(NULL));
+	Union::UnionFind uf = Union::UnionFind(n);
+	time_t startTime = clock();
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		uf.unionItem(a, b);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		uf.isConnected(a, b);
+	}
+	time_t endTime = clock();
+	std::cout << "UnionFind, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s\n";
+}
+
+void MainHelper::MainHelper::testQuickUnion()
+{
+	int n = 100000;
+	srand(time(NULL));
+	Union::QuickUnion qu = Union::QuickUnion(n);
+	time_t startTime = clock();
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.unionItem(a, b);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.isConnected(a, b);
+	}
+	time_t endTime = clock();
+	std::cout << "QuickUnion, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s\n";
+}
+
+void MainHelper::MainHelper::testQuickUnionSz()
+{
+	int n = 1000000;
+	srand(time(NULL));
+	Union::QuickUnionSize qu = Union::QuickUnionSize(n);
+	time_t startTime = clock();
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.unionItem(a, b);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.isConnected(a, b);
+	}
+	time_t endTime = clock();
+	std::cout << "QuickUnionSize, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s\n";
+}
+
+void MainHelper::MainHelper::testQuickUnionRank()
+{
+	int n = 1000000;
+	srand(time(NULL));
+	Union::QuickUnionRank qu = Union::QuickUnionRank(n);
+	time_t startTime = clock();
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.unionItem(a, b);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.isConnected(a, b);
+	}
+	time_t endTime = clock();
+	std::cout << "QuickUnionRank, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s\n";
+}
+
+void MainHelper::MainHelper::testQuickUnionCompress()
+{
+	int n = 1000000;
+	srand(time(NULL));
+	Union::QuickUnionCompress qu = Union::QuickUnionCompress(n);
+	time_t startTime = clock();
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.unionItem(a, b);
+	}
+	for (int i = 0; i < n; i++)
+	{
+		int a = rand() % n;
+		int b = rand() % n;
+		qu.isConnected(a, b);
+	}
+	time_t endTime = clock();
+	std::cout << "QuickUnionCompress, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s\n";
 }

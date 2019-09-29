@@ -17,6 +17,9 @@
     <ClCompile Include="SortingAlgorithm\Heap.cpp">
       <Filter>SortingAlgorithm</Filter>
     </ClCompile>
+    <ClCompile Include="SortingAlgorithm\Union.cpp">
+      <Filter>SortingAlgorithm</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SortingAlgorithm\Sort.h">
@@ -27,6 +30,9 @@
       <Filter>SortingAlgorithm</Filter>
     </ClInclude>
     <ClInclude Include="SortingAlgorithm\Heap.h">
+      <Filter>SortingAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithm\Union.h">
       <Filter>SortingAlgorithm</Filter>
     </ClInclude>
   </ItemGroup>
