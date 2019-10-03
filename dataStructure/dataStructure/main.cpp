@@ -33,13 +33,16 @@ int main()
 	//MainHelper::MainHelper::testQuickUnion();
 
 	// 基于sz优化的快速并查集
-	MainHelper::MainHelper::testQuickUnionSz();
+	//MainHelper::MainHelper::testQuickUnionSz();
 
 	// 基于rank优化的快速并查集
-	MainHelper::MainHelper::testQuickUnionRank();
+	//MainHelper::MainHelper::testQuickUnionRank();
 
 	// 基于路径压缩优化的快速并查集
-	MainHelper::MainHelper::testQuickUnionCompress();
+	//MainHelper::MainHelper::testQuickUnionCompress();
+
+	// 测试邻接表
+	MainHelper::MainHelper::testGraph();
 
 	system("pause");
 }

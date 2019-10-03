@@ -32,6 +32,8 @@ namespace MainHelper
 		static void testQuickUnionSz();
 		static void testQuickUnionRank();
 		static void testQuickUnionCompress();
+
+		static void testGraph();
 	};
 }
 

@@ -6,6 +6,8 @@
 #include "SortingAlgorithm/Heap.h"
 #include "SortingAlgorithm/BinaryTree.h"
 #include "SortingAlgorithm/Union.h"
+#include "SortingAlgorithm/Graph.h"
+#include "SortingAlgorithm/ReadGraph.h"
 
 void MainHelper::MainHelper::printArray(const int arr[], const int n)
 {
@@ -290,4 +292,49 @@ void MainHelper::MainHelper::testQuickUnionCompress()
 	}
 	time_t endTime = clock();
 	std::cout << "QuickUnionCompress, " << 2 * n << " ops, " << double(endTime - startTime) / CLOCKS_PER_SEC << "s\n";
+}
+
+void MainHelper::MainHelper::testGraph()
+{
+	// ²âÊÔÓÃÀý
+
+	//int N = 20;
+	//int M = 100;
+	//srand(time(NULL));
+	//// Sparse Graph
+	//Graph::SparseGraph g1(N, false);
+	//for (int i = 0; i < N; i++)
+	//{
+	//	int a = rand() % N;
+	//	int b = rand() % N;
+	//	g1.addEdge(a, b);
+	//}
+
+	//for (int v = 0; v < N; v++)
+	//{
+	//	cout << v << " : ";
+	//	Graph::SparseGraph::adjIterator adj(g1, v);
+	//	for (int w = adj.begin(); !adj.end(); adj.next())
+	//		cout << w << " ";
+	//	cout << endl;
+	//}
+	//cout << endl;
+
+	string filename = "test2.txt";
+	Graph::SparseGraph g(6, false);
+	ReadGraph<Graph::SparseGraph> readGraph(g, filename);
+	cout << "test in Sparse Graph:" << endl;
+	g.show();
+	cout << endl;
+
+	//Graph::Component component(g);
+	//cout << "test.txt , Component Count: " << component.count();
+
+	Graph::Path dfs(g, 0);
+	cout << "DFS: ";
+	dfs.showPath(5);
+
+	Graph::ShortestPath bfs(g , 0);
+	cout << "BFS: ";
+	bfs.showPath(5);
 }

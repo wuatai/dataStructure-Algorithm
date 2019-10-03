@@ -35,5 +35,11 @@
     <ClInclude Include="SortingAlgorithm\Union.h">
       <Filter>SortingAlgorithm</Filter>
     </ClInclude>
+    <ClInclude Include="SortingAlgorithm\Graph.h">
+      <Filter>SortingAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithm\ReadGraph.h">
+      <Filter>SortingAlgorithm</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

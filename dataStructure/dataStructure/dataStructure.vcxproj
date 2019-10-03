@@ -74,7 +74,9 @@
   <ItemGroup>
     <ClInclude Include="MainHelper.h" />
     <ClInclude Include="SortingAlgorithm\BinaryTree.h" />
+    <ClInclude Include="SortingAlgorithm\Graph.h" />
     <ClInclude Include="SortingAlgorithm\Heap.h" />
+    <ClInclude Include="SortingAlgorithm\ReadGraph.h" />
     <ClInclude Include="SortingAlgorithm\Sort.h" />
     <ClInclude Include="SortingAlgorithm\Union.h" />
   </ItemGroup>
